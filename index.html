@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@300;400;600&display=swap');
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          'md': '768px',
+          'lg':	'1024px',
+          'xl': '1440px'
+        },
+        extend: {
+          colors: {
+            softBlue: 'hsl(215, 51%, 70%)',
+            cyan: 'hsl(178, 100%, 50%)',
+            veryDarkBlueMain: 'hsl(217, 54%, 11%)',
+            veryDarkBlueCard: 'hsl(216, 50%, 16%)',
+            veryDarkBlueLine: 'hsl(215, 32%, 27%)',
+            white: 'hsl(0, 0%, 100%)'
+          },
+          fontFamily: {
+            'outfit': 'Outfit, sans-serif'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="w-full h-screen grid place-items-center bg-veryDarkBlueMain">
+    <main class="w-[90%] h-fit  bg-veryDarkBlueCard p-6 rounded-lg md:w-[40%] lg:w-[21%] xl:w-[21%] xl:p-5">
+      <div class="mb-2">
+        <img class="rounded-lg" src="./images/image-equilibrium.jpg" alt="equilibrium" />
+      </div>
+      <div class="py-2 flex flex-col space-y-4 font-outfit">
+        <h1 class="text-white text-xl font-bold">Equilibrium #3429</h1>
+        <p class="text-softBlue text-md">Our Equilibrium collection promotes balance and calm.</p>
+        <div class="flex inline-flex">
+          <p class="text-sm flex inline-flex items-center space-x-1 basis-2/4">
+            <span>
+              <object data="./images/icon-ethereum.svg"></object>
+            </span>
+            <span class="flex-1 text-left text-cyan">0.041
+              ETH</span>
+          </p>
+          <p class="flex inline-flex items-center justify-end space-x-1 basis-2/4 text-left">
+            <span class=""><object data="./images/icon-clock.svg"></object></span>
+            <span class="text-right text-softBlue">3 days left</span>
+          </p>
+        </div>
+        <hr class="w-full h-[0.1px] bg-veryDarkBlueLine" />
+        <p>
+          <span class="text-sm inline-flex items-center space-x-2">
+            <img class="w-6 h-6 border-[1px] rounded-full border-white" src="./images/image-avatar.png" alt="avatar" />
+            <span class="text-softBlue">Creation of</span><span class="text-white">Jules Wyvern</span>
+          </span>
+        </p>
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
