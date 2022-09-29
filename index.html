@@ -42,16 +42,19 @@
 </head>
 
 <body>
-  <div class="w-full h-screen grid place-items-center bg-veryDarkBlueMain">
-    <main class="w-[90%] h-fit  bg-veryDarkBlueCard p-6 rounded-lg md:w-[40%] lg:w-[21%] xl:w-[21%] xl:p-5">
-      <div class="mb-2">
+  <div class="w-full min-h-screen grid place-items-center bg-veryDarkBlueMain">
+    <main class="w-[90%] h-max  bg-veryDarkBlueCard p-6 rounded-xl md:w-[22rem] lg:w-[21%] xl:w-[22rem] xl:p-5 xl:px-6">
+      <div class="mb-2 relative">
         <img class="rounded-lg" src="./images/image-equilibrium.jpg" alt="equilibrium" />
+        <div class="absolute content-center flex justify-center items-center ease-out duration-500 top-0 hover:opacity-100 hover:bg-opacity-70 cursor-pointer w-full h-full hover:bg-cyan opacity-0 rounded-lg">
+          <img src="./images/icon-view.svg" class="w-10 h-10" />
+        </div>
       </div>
-      <div class="py-2 flex flex-col space-y-4 font-outfit">
-        <h1 class="text-white text-xl font-bold">Equilibrium #3429</h1>
-        <p class="text-softBlue text-md">Our Equilibrium collection promotes balance and calm.</p>
-        <div class="flex inline-flex">
-          <p class="text-sm flex inline-flex items-center space-x-1 basis-2/4">
+      
+        <h1 class="text-white text-2xl font-bold mb-4 mt-4">Equilibrium #3429</h1>
+        <p class="text-softBlue text-lg mb-4 ">Our Equilibrium collection promotes balance and calm.</p>
+        <div class=" mb-4 w-full flex inline-flex border-b-[1px] border-veryDarkBlueLine pb-4">
+          <p class="text-lg font-outfit font-semibold flex inline-flex items-center space-x-1 basis-2/4">
             <span>
               <object data="./images/icon-ethereum.svg"></object>
             </span>
@@ -63,14 +66,14 @@
             <span class="text-right text-softBlue">3 days left</span>
           </p>
         </div>
-        <hr class="w-full h-[0.1px] bg-veryDarkBlueLine" />
-        <p>
-          <span class="text-sm inline-flex items-center space-x-2">
-            <img class="w-6 h-6 border-[1px] rounded-full border-white" src="./images/image-avatar.png" alt="avatar" />
-            <span class="text-softBlue">Creation of</span><span class="text-white">Jules Wyvern</span>
+        
+        <p class="mb-2">
+          <span class="text-mdx inline-flex items-center">
+            <img class="w-9 h-9 border-[1px] rounded-full border-white" src="./images/image-avatar.png" alt="avatar" />
+            <span class="text-softBlue ml-4">Creation of</span><span class="text-white ml-1">Jules Wyvern</span>
           </span>
         </p>
-      </div>
+      
     </main>
   </div>
 
